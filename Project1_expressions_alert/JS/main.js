@@ -10,7 +10,6 @@ document.write(blues);
 document.write("\n\n")
 
 
-
 function My_First_Function(){
     var str = "This text is green!";
     var result = str.fontcolor ("green");//this is the font color green
@@ -23,5 +22,7 @@ function myFunction() {
     document.getElementById("Concatenate").innerHTML = sentence;
 }
 
-var x = 3;
-document.write(x+3);
+var str1 ="Hello ";
+var str2 ="World!";
+var result = str1.concat(str2); //This combines the two to create "Hello World!"
+document.write(result);
