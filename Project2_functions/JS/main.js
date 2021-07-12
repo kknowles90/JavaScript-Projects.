@@ -6,7 +6,7 @@ function My_First_Function(){
 }
 
 function myFunction() {
-    var senctence = "I am learning";//this is a variable sentence
-    secntence += "a lot from this book!";//this is the addition to the variable
+    var sentence = "I am learning";//this is a variable sentence
+    sentence += "a lot from this book!";//this is the addition to the variable
     document.getElementById("Concatenate").innerHTML = sentence;
 }
