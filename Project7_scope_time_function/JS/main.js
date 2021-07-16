@@ -31,8 +31,8 @@ function Time_function(){
 var x = 20;//Global Var
 
 function localVar() {
-    y = 10;//Local Var
-    console.log(15 + x + y);
+    //y = 10;//Local Var if // removed.
+    console.log(15 + x + y);//store in console
 }
 
 localVar();
