@@ -23,3 +23,5 @@ function count_Function(){
     return start;
     }
 }
+
+document.write(Larger = (5 > 1) ? "Left number is larger":"Right number is larger");
