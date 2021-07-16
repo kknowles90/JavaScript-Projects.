@@ -27,3 +27,12 @@ function Time_function(){
     }
     document.getElementById("Time_of_day").innerHTML = Reply;
 }
+
+var x = 20;//Global Var
+
+function localVar() {
+    y = 10;//Local Var
+    console.log(15 + x + y);
+}
+
+localVar();
