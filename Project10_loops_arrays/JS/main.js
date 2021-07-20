@@ -45,3 +45,13 @@ let car = {
     }
 }
 document.getElementById("car_object").innerHTML = car.description();
+
+function Counting(){
+    var X ="";
+    var j = 1;
+    while (j < 21){
+        X += "<br>" + j;
+        j++;
+    }
+    document.getElementById("Counting").innerHTML = X;
+}
