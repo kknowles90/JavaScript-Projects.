@@ -22,8 +22,7 @@ function constant_function(){
     const musical_Instrument = {type: "guitar", brand: "Fender", color:"black"};
     musical_Instrument.color = "blue";
     musical_Instrument.price = "$900";
-    document.getElementById("Constant").innerHTML = "The cost of the " +
-        musical_Instrument.type + " was " + musical_Instrument.price;
+    document.getElementById("Constant").innerHTML = "The cost of the " + musical_Instrument.type + " was " + musical_Instrument.price;
 }
 
 // const X = 10 would lock the X variable's value.
@@ -41,7 +40,7 @@ let car = {
     model: "Viper",
     year: "2021",
     color: "red",
-    description : function {
+    description : function() {
         return "The car is a " + this.year + this.color + this.make + this.model;
     }
 }
