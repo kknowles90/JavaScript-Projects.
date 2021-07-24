@@ -18,7 +18,7 @@ function placeXOrO(squareNumber){
         else {
             activePlayer = 'X';
         }
-        Audio('./media/place.mp3');
+        audio('./media/place.mp3');
         if(activePlayer === 'O'){
             disableClick();
             setTimeout(function(){ computersTurn(); }, 1000)
@@ -76,7 +76,7 @@ function audio(audioURL){
 }
 
 function drawWinLine(coordX1, coordY1, coordX2, coordY2){
-    const canvas = document.getElementById('win-lines')
+    const canvas = document.getElementById("win-lines")
     const c = canvas.getContext('2d');
     let x1 = coordX1,
         y1 = coordY1,
@@ -115,4 +115,12 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2){
     audio('./media/winGame.mp3');
     animateLineDrawing();
     setTimeout(function(){clear(); resetGame(); }, 1000);
+}
+
+function resetGame() {
+    for(let i = 0; i < 9; i++){
+        let square = document.getElementById(String(i))
+        square.style.backgroundImage = ''
+    }
+    selectedSquares = [];
 }
