@@ -5,7 +5,7 @@
         <title>The Space Station | Resort</title>
         <link rel="stylesheet" href="./css/shared.css">
         <link rel="stylesheet" href="./css/animations.css">
-        <script src="JS/OnepageJS.js"></script>
+        
     </head>
     <body>
         <!-- NAV -->
@@ -15,7 +15,7 @@
                     <a href="#home"><li>HOME</li></a>
                     <a href="#gallery"><li>GALLERY</li></a>
                     <a href="#contact"><li>RESERVATIONS</li></a>
-                    <script src="JS/OnepageJS.js"></script>
+                    
                 </ul>
             </div>
         </div>
@@ -43,62 +43,76 @@
               <img src="./images/thumbnail_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
             </div>
             <div class="column">
-              <img src="./images/thumbnail_9.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+              <img src="./images/thumbnail_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
             </div>
-          </div>
+            <!--<div class="column">
+                <img src="./images/thumbnail_5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+            </div>-->
+        </div>
           
           <!-- The Modal/Lightbox -->
-          <div id="myModal" class="modal">
+        <div id="myModal" class="modal">
             <span class="close cursor" onclick="closeModal()">&times;</span>
             <div class="modal-content">
-          
-              <div class="mySlides">
-                <div class="numbertext">1 / 4</div>
-                <img src="./images/thumbnail_1.jpg" style="width:100%">
-              </div>
-          
-              <div class="mySlides">
-                <div class="numbertext">2 / 4</div>
-                <img src="./images/thumbnail_2.jpg" style="width:100%">
-              </div>
-          
-              <div class="mySlides">
-                <div class="numbertext">3 / 4</div>
-                <img src="./images/thumbnail_3.jpg" style="width:100%">
-              </div>
-          
-              <div class="mySlides">
-                <div class="numbertext">4 / 4</div>
-                <img src="./images/thumbnail_9.jpg" style="width:100%">
-              </div>
-          
-              <!-- Next/previous controls -->
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          
-              <!-- Caption text -->
-              <div class="caption-container">
-                <p id="caption"></p>
-              </div>
-          
-              <!-- Thumbnail image controls -->
-              <div class="column">
-                <img class="demo" src="./images/thumbnail_1.jpg" onclick="currentSlide(1)" alt="Our View">
-              </div>
-          
-              <div class="column">
-                <img class="demo" src="./images/thumbnail_2.jpg" onclick="currentSlide(2)" alt="Command Center">
-              </div>
-          
-              <div class="column">
-                <img class="demo" src="./images/thumbnail_3.jpg" onclick="currentSlide(3)" alt="Interior">
-              </div>
-          
-              <div class="column">
-                <img class="demo" src="./images/thumbnail_9.jpg" onclick="currentSlide(4)" alt="Full View">
-              </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="./images/thumbnail_1.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="./images/thumbnail_2.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="./images/thumbnail_3.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="./images/thumbnail_4.jpg" style="width:100%">
+                </div>
+
+                <!--<div class="mySlides">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="./images/thumbnail_5.jpg" style="width:100%">
+                </div>-->
+            
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="./images/thumbnail_1.jpg" onclick="currentSlide(1)" alt="Our View">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./images/thumbnail_2.jpg" onclick="currentSlide(2)" alt="Command Center">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./images/thumbnail_3.jpg" onclick="currentSlide(3)" alt="Interior">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./images/thumbnail_4.jpg" onclick="currentSlide(4)" alt="Full View">
+                </div>
+
+                <!--<div class="column">
+                    <img class="demo" src="./images/thumbnail_5.jpg" onclick="currentSlide(5)" alt="Full View">
+                </div>-->
+
+
             </div>
-          </div>
+        </div>
     
         <!-- GALLERY -->
         <section id="gallery">
@@ -106,27 +120,7 @@
                 <h1>GALLERY</h1>
                 <div class="flex-container">
 
-                    <div class="column">
-                        <img src="./images/thumbnail_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                    </div>
-                    <div class="column-overlay">
-                        <h3>Click to Enlarge</h3>
-                        <p>We have several space launches daily, book your flight today!</p>
-                    </div>
-                    
-                    <!-- PHOTO-CONTAINER 1 -->
-                    <div class="photo-container">
-                        
-                            <div class="column">
-                                <img src="./images/thumbnail_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                            </div>
-                            <div class="column-overlay">
-                                <h3>Click to Enlarge</h3>
-                                <p>We have several space launches daily, book your flight today!</p>
-                            </div>
-                        
-                    </div>
-                    <!-- END PHOTO-CONTAINER 1 -->
+
 
 
                     <!-- PHOTO-CONTAINER 2 -->
@@ -148,7 +142,7 @@
                     <!-- PHOTO-CONTAINER 3 -->
                         <div class="photo-container">
                             <div class="photo">
-                                <img src="./images/thumbnail_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                                <img src="./images/thumbnail_1.jpg" alt="">
                                 <div class="photo-overlay">
                                     <h3>Click to Enlarge</h3>
                                     <p>We have several space launches daily, book your flight today!</p>
@@ -276,6 +270,8 @@
 			www.thespacestation.space &nbsp;|&nbsp; &copy; 2016
 		</div>
 		<!-- END FOOTER-->
+        <script src="JS/OnepageJS.js"></script>
+        
 		
     </body>
 </html>
