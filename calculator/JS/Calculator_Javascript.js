@@ -54,6 +54,7 @@ const Perform_Calculation = {
 
     '=': (First_Operand, Second_Operand) => Second_Operand,
 }
+console.log(Perform_Calculation);
 
 function Calculator_Reset(){
     Calculator.Display_Value = '0';
@@ -90,9 +91,11 @@ keys.addEventListener('click', (event) => {
         return;
     }
 
-    Input_Decimal(target.value);
+    Input_Digit(target.value);
     Update_Display();
 })
+
+
 
 
 
